@@ -12,14 +12,18 @@ body {
 nav {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center items */
+    justify-content: flex-start; /* Align content (ul) to the right */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex; /* Use flexbox for list items too */
+    align-items: center;
 }
 
 nav ul li {
@@ -78,6 +82,12 @@ nav ul ul.dropdown-content li a:hover {
     border-radius: 0; /* No radius for dropdown items */
 }
 
+/* Navbar icon style */
+.navbar-icon {
+    height: 40px; /* Example height, adjust to match your navbar's desired height */
+    width: auto; /* Maintain aspect ratio */
+    margin-left: 20px; /* Add some space between icon and links (adjust for RTL if needed) */
+}
 
 /* Container styles */
 .container {
@@ -117,4 +127,9 @@ th, td {
 
 th {
     background-color: #f2f2f2;
+}
+
+.test {
+    background-color: red;
+    color: blue;
 }
